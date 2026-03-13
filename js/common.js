@@ -33,9 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // 페이지 로드 시 저장된 테마 가져오기
     const savedTheme = localStorage.getItem("theme");
 
-    // 저장된 테마가 없으면 OS 다크모드 설정 자동 감지
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    const initialTheme = savedTheme || (prefersDark ? "dark" : "light");
+    // 저장된 테마가 없으면 기본값인 'light' 모드 적용
+    const initialTheme = savedTheme || "light";
 
     setTheme(initialTheme);
 
