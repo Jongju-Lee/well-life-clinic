@@ -24,7 +24,7 @@
 
 ### 1. CSS 변수 기반 디자인 시스템 설계
 - **중앙 집중형 스타일 관리:** 컬러, 스페이싱(4px 단위), 타이포그래피, 레이아웃 등 100개 이상의 디자인 토큰을 `variables.css`에 CSS Custom Properties로 정의하여 전체 UI의 일관성을 유지했습니다. (👉 [코드 보기](css/common/variables.css))
-- **Typography Scale:** Perfect Fourth(1.333배) 비율을 적용한 6단계 폰트 사이즈 시스템을 구성하고, 한글(SC-Dream) · 영문(Montserrat) · 숫자(GmarketSans)를 용도별로 분리 적용했습니다. 모든 `@font-face`에 `font-display: swap`을 설정하여 웹폰트 로딩 전 텍스트가 보이지 않는 FOIT 현상을 방지했습니다.
+- **Typography Scale:** Perfect Fourth(1.333배) 비율을 적용한 6단계 폰트 사이즈 시스템을 구성하고, 한글(에스코어드림) · 영문(Montserrat) · 숫자(GmarketSans)를 용도별로 분리 적용했습니다. 모든 `@font-face`에 `font-display: swap`을 설정하여 웹폰트 로딩 전 텍스트가 보이지 않는 FOIT 현상을 방지했습니다.
 - **다크모드 연동:** `[data-theme='dark']` 선택자 하나로 배경, 텍스트, 테두리, 그림자 등의 색상 변수를 일괄 오버라이드하여 별도 CSS 파일 없이 다크모드를 구현했습니다. `localStorage`로 설정을 유지하고, 첫 방문 시에는 `prefers-color-scheme`으로 OS 다크모드 설정을 자동 감지합니다.
 
 ### 2. 웹 접근성(KWCAG) 지침을 고려한 시맨틱 마크업
@@ -95,7 +95,7 @@ well-life/
 │   ├── includes.js                     # 컴포넌트 로드 로직
 │   ├── common.js                       # 다크모드, 애니메이션, Swiper
 │   └── appointment.js                  # 캘린더, 폼 검증
-├── font/                               # 로컬 웹폰트 (SC-Dream, Montserrat 등)
+├── font/                               # 로컬 웹폰트 (에스코어드림, Montserrat 등)
 ├── images/                             # WebP 포맷 이미지
 └── mockup/                             # 태블릿·모바일 목업 참고 파일
 ```
