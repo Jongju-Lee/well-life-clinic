@@ -217,7 +217,7 @@
 }
 /* 일요일은 선택 불가(병원 휴일) */
 .appointment-form__item-calendar-date:nth-child(7n + 1) {
-  color: var(--contents-tertiary);
+  color: var(--contents-secondary);
   pointer-events: none;
 }
 /* 토요일은 선택 가능 */
@@ -240,7 +240,7 @@
   background-color: var(--color-indigo) !important;
 }
 .appointment-form__item-calendar-date--disabled {
-  color: var(--contents-tertiary) !important;
+  color: var(--contents-secondary) !important;
   pointer-events: none;
 }
 
@@ -282,7 +282,7 @@
 }
 .appointment-form__item-time--disabled {
   border: 1px solid var(--border-transparent);
-  color: var(--contents-tertiary);
+  color: var(--contents-secondary);
   background-color: var(--color-light-gray);
   pointer-events: none;
 }
@@ -297,7 +297,7 @@
   border-radius: 4px;
 }
 .appointment-form__item-subject-select option[disabled] {
-  color: var(--contents-tertiary);
+  color: var(--contents-secondary);
 }
 
 /* appointment-form__item - 담당 의료진 */
@@ -370,7 +370,7 @@
 }
 .appointment-form__item-patient-input-box span {
   font-family: var(--font-KR-medium);
-  color: var(--contents-tertiary);
+  color: var(--contents-secondary);
 }
 
 /* 주소 */
@@ -394,10 +394,10 @@
   min-width: 0;
 }
 .appointment-form__item-patient-list-item--address input::-moz-placeholder {
-  color: var(--contents-tertiary);
+  color: var(--contents-secondary);
 }
 .appointment-form__item-patient-list-item--address input::placeholder {
-  color: var(--contents-tertiary);
+  color: var(--contents-secondary);
 }
 .appointment-form__item-patient-list-item--address input:focus::-moz-placeholder {
   opacity: 0;
